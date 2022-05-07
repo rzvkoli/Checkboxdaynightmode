@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: black;
+    transition: all 0.3s;
+}
+
+.button{
+    background: #fff;
+    width: 60px;
+    height: 30px;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button::before{
+    content: '';
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: #ff000d;
+    float: left;
+    margin: 2px;
+    border-radius: 100px;
+    transition: all 0.3s;
+}
+
+.day{
+    background: white;
+}
+
+.day .button{
+    background: #000;
+}
+
+.day .button::before{
+    background: #fff;
+    margin-left: 32px;
+}
